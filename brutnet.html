@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Convertisseur Brut Net</title>
+    <script src="brutnet.js"></script>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>Statut</h1>
+    <select id="statut" onchange="onChange(this.id)">
+        <option value="1">Salarié</option>
+        <option value="2">Cadre</option>
+        <option value="3">Fonctionnaire</option>
+        <option value="4">Profession libérale</option>
+    </select>
+
+    <h1>Salaire annuel brut </h1>
+    <input type="number" id="annuelBrut" onchange="onChange(this.id)">
+
+    <h1>Salaire mensuel brut</h1>
+    <input type="number" id="mensuelBrut" onchange="onChange(this.id)">
+
+    <h1>Salaire annuel net</h1>
+    <input type="text" id="annuelNet" readonly>
+
+    <h1>Salaire mensuel net</h1>
+    <input type="text" id="mensuelNet" readonly>
+
+    <h1>Post-Impot annuel net</h1>
+    <input type="text" id="postImpotAnnuel" readonly>
+
+    <h1>Post-Impot mensuel net</h1>
+    <input type="text" id="postImpotMensuel" readonly>
+
+
+</body>
+
+</html>
